@@ -55,7 +55,7 @@ For hardware flashing, we recommend [stlink](https://github.com/stlink-org/stlin
 
 ### Step 1: Install Dependencies
 
-Setting up and embedded toolchain can be complicated. This process has been automated. Running 'setup.sh' the following will be installed.
+Setting up an embedded toolchain can be complicated. This process has been automated. When `setup.sh` is run, the following will be installed.
 
 - arduino-cli alpha Version: 0.16.0 Commit: c977a238 Date: 2021-02-15T09:30:01Z
 - STM32:xpack-arm-none-eabi-gcc@9.2.1-1.1
@@ -69,7 +69,7 @@ setup.sh
 
 ### Step 2: Compilation
 
-Running build.sh will compile a link the open source code and proprietary object file. The resulting binary can be found in lkg-stm32/output/go_stm32_v0.00_build-0.bin
+Running `build.sh` will compile a link the open source code and proprietary object file. The resulting binary can be found in lkg-stm32/output/go_stm32_v0.00_build-0.bin
 
 ```bash
 build.sh
@@ -95,10 +95,10 @@ This proprietary software makes use of LGPL libraries.
 * **Proprietary Object Files (`lkg-stm32/libraries/LkgLib/src/cortex-m3/LkgLib.a`):**
   LkgLib.a  
   Copyright © 2025 Looking Glass Factory, Inc. All rights reserved. Unauthorized copying or distribution is strictly prohibited.  
-  With the exceptions noted below, LkgLib.a is proprietary to Looking Glass Factory, Inc. and is provided under our software terms of use which can be found [here](https://lookingglassfactory.com/terms)
+  With the exceptions noted below, LkgLib.a is proprietary to Looking Glass Factory, Inc. and is provided under our software terms of use which can be found [here](https://lookingglassfactory.com/terms).
 
 * **Open Source Library CircularBuffer (`lkg-stm32/libraries/CircularBuffer`):**
     This library is licensed under LGPL-3.0. See the respective licence [here](lkg-stm32/libraries/CircularBuffer/LICENSE) for further details. The source code can be found in this repository or can be downloaded from [here](https://github.com/rlogiacco/CircularBuffer).
 
 * **Open Source Arduino Components:**
-    The Arduino Core and associated libraries are licensed under the GNU LGPL, GNU GPL, or other open-source licenses. Source code for these components are available via the official Arduino repositories or can be downloaded locally during the 'setup.sh' process.
+    The Arduino Core and associated libraries are licensed under the GNU LGPL, GNU GPL, or other open-source licenses. Source code for these components are available via the official Arduino repositories or can be downloaded locally during the `setup.sh` process.
