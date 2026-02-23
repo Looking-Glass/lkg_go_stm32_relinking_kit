@@ -17,6 +17,12 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ Modified by [Looking Glass Factory, Inc] in 2025.
+
+ Changed filename from .tpp to .cpp and added explicit template
+ instantiations to force code generation for linking purposes.
+ */
 
 #include "Arduino.h"
 #include "CircularBuffer.h"
@@ -166,6 +172,8 @@ void inline CircularBuffer<T,S,IT>::debugFn(Print* out, void (*printFunction)(Pr
 	}
 }
 #endif
+
+// Explicit template instatiations
 template class CircularBuffer<unsigned char, 8u, unsigned char>;
 template class CircularBuffer<char, 64u, unsigned char>;
 template class CircularBuffer<char, 320u, unsigned short>;

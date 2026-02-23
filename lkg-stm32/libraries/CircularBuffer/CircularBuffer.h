@@ -16,6 +16,13 @@
  You should have received a copy of the GNU General Public License
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/*
+ Modified by [Looking Glass Factory, Inc] in 2025.
+
+ Removed template include to enable explicit template instantiations
+ to force code generation for linking purposes.
+ */
 #ifndef CIRCULAR_BUFFER_H_
 #define CIRCULAR_BUFFER_H_
 #include <stdint.h>
@@ -145,5 +152,6 @@ private:
 #endif
 };
 
+// Disable template
 //#include <CircularBuffer.tpp>
 #endif
